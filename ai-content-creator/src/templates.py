@@ -81,7 +81,7 @@ Increase brand recall and engagement while positioning MoveAtlas as infrastructu
 Write the blog post now.
 """.strip()
 
-=============================================================================
+# =============================================================================
 # GLOBAL ANTI-SLOP RULES
 # =============================================================================
 # These are injected into EVERY template to prevent generic AI output.
@@ -202,7 +202,7 @@ Drive CTR and establish strategic inevitability of MoveAtlas.
 Write the article now.
 """.strip()
 
-=============================================================================
+# =============================================================================
 # GLOBAL ANTI-SLOP RULES
 # =============================================================================
 # These are injected into EVERY template to prevent generic AI output.
@@ -333,7 +333,7 @@ by clearly demonstrating ecosystem superiority.
 Write the article now.
 """.strip()
 
-=============================================================================
+# =============================================================================
 # GLOBAL ANTI-SLOP RULES
 # =============================================================================
 # These are injected into EVERY template to prevent generic AI output.
