@@ -43,9 +43,9 @@
 
 | Context | Tone | Example |
 |----------|---------------------------|--------------------------------|
-| Educational content | Encouraging, patient, clear | "Here’s how to explore new studios near you." |
-| Product announcements | Excited, confident, benefit-focused | "We’re expanding to two new cities — your membership just got bigger." |
-| Problem-solving | Empathetic, solution-oriented, calm | "We understand the issue. Here’s how we’re fixing it." |
+| Educational content | Encouraging, patient, clear | "Here's how to explore new studios near you." |
+| Product announcements | Excited, confident, benefit-focused | "We're expanding to two new cities — your membership just got bigger." |
+| Problem-solving | Empathetic, solution-oriented, calm | "We understand the issue. Here's how we're fixing it." |
 | Thought leadership | Authoritative, forward-looking, insightful | "Urban fitness is evolving — flexibility is the new standard." |
 | Social media | Conversational, engaging, concise | "Europe is your gym. Where are you training today?" |
 | Partner communication | Professional, business-focused | "Fill your classes with reliable monthly members." |
@@ -79,7 +79,7 @@
 ### Elevator Pitch (30 seconds)  
 
 
-> MoveAtlas is Europe’s lifestyle and sports membership platform connecting fitness enthusiasts with 1000+ studios across 15+ cities through one seamless app. Unlike traditional gyms that limit you to one venue, MoveAtlas gives you the freedom to explore yoga, boxing, climbing, pilates, and more — all under one flexible membership. Europe is your gym.
+> MoveAtlas is Europe's lifestyle and sports membership platform connecting fitness enthusiasts with 1000+ studios across 15+ cities through one seamless app. Unlike traditional gyms that limit you to one venue, MoveAtlas gives you the freedom to explore yoga, boxing, climbing, pilates, and more — all under one flexible membership. Europe is your gym.
 
 
 ### Tagline/Slogan  
@@ -196,3 +196,62 @@
 > **Last Updated:** 16-02-2026
 > **Owner:** MoveAtlas Product Team  
 
+# 8. Competitive Positioning Principles
+
+> Purpose: Ensure all content reinforces MoveAtlas differentiation without sounding reactive.
+
+## Our Position
+
+MoveAtlas is a community-powered European fitness membership built on transparency, flexibility, and sustainable studio partnerships.
+
+**We compete on:**
+- Simplicity  
+- Transparent pricing  
+- Community alignment  
+- SME accessibility  
+- European-first growth  
+
+**We do not compete on:**
+- Largest venue count  
+- Enterprise-only contracts  
+- Complex credit systems  
+- Growth-at-all-costs expansion  
+
+---
+
+## Strategic Contrast Rule
+
+When competitors emphasize **scale, credits, or enterprise dominance**,  
+we emphasize **clarity, flexibility, and community**.
+
+Contrast ideas — not competitor names.
+
+---
+
+## Required Positioning Thread
+
+Every piece of content must reinforce at least one of the following:
+
+- Flexibility as the default  
+- Transparent pricing  
+- Community-first partnerships  
+- Movement without long-term commitment  
+- Europe as a connected fitness ecosystem  
+
+If none are present, the content is too generic.
+
+---
+
+## Tone Guardrail
+
+**Never sound:**
+- Defensive  
+- Smaller  
+- Cheaper  
+- Reactive  
+
+**Always sound:**
+- Intentional  
+- Clear  
+- Confident  
+- Community-driven

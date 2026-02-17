@@ -2,9 +2,17 @@
 
 Project scaffold for an AI-powered content creation workflow.
 
-## Structure
+## 📁 Project Structure
 
-- `src/`: Core application modules
-- `knowledge_base/`: Primary and secondary markdown knowledge sources
-- `templates/`: Prompt templates
-- `config/`: VS Code agent configuration
+text
+ai-content-creator/
+├── src/
+│   ├── interface.py           # UI Layer: Terminal interactions & formatting
+│   ├── main.py                # Orchestrator: Connects all modules
+│   ├── prompt_templates.py    # Strategy: Content engines & anti-slop rules
+│   ├── knowledge_base.py      # Data: Primary/Secondary KB management
+│   ├── document_processor.py  # Ingestion: Markdown processing logic
+│   └── llm_integration.py     # Integration: Provider Factory (GPT/Claude)
+├── knowledge_base/            # Source Material (.md files)
+├── requirements.txt           # Project Dependencies
+└── .env                       # API Credentials
