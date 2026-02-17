@@ -4,7 +4,7 @@ Project scaffold for an AI-powered content creation workflow.
 
 ## 📁 Project Structure
 
-text
+```text
 ai-content-creator/
 ├── src/
 │   ├── interface.py           # UI Layer: Terminal interactions & formatting
@@ -15,4 +15,4 @@ ai-content-creator/
 │   └── llm_integration.py     # Integration: Provider Factory (GPT/Claude)
 ├── knowledge_base/            # Source Material (.md files)
 ├── requirements.txt           # Project Dependencies
-└── .env                       # API Credentials
+└── .env                       # API Credentials 
