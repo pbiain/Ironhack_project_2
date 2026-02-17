@@ -1,19 +1,108 @@
+# =============================================================================
+# MoveAtlas Blog Post Engines (Token Controlled Templates)
+# =============================================================================
 
-# -------------------------------------------------------------------
-# Template 1 — Brand Authority Infrastructure Engine (Token Controlled)
-# -------------------------------------------------------------------
+# =============================================================================
+# GLOBAL ANTI-SLOP RULES (STRICT VERSION)
+# =============================================================================
+# Shared across ALL templates. Referenced via {ANTI_SLOP_RULES_STRICT} in f-strings.
+
+ANTI_SLOP_RULES_STRICT = """
+# =============================================================================
+# STRICT ANTI-AI-SLOP RULES — FOLLOW EVERY SINGLE ONE
+# =============================================================================
+# These rules exist because AI writing has recognizable patterns.
+# Breaking even ONE of these rules makes the article detectable as AI.
+# Read each rule carefully. Count your violations as you write.
+
+FORMATTING RULES (non-negotiable):
+1. BOLD TEXT: Maximum 1 bold phrase in the entire article (the CTA only).
+   ALL other emphasis must come from word choice and sentence structure.
+   Do NOT use bold for key phrases, definitions, or argument points.
+
+2. ITALIC TEXT: Maximum 2 italic words in the entire article.
+   Do NOT use italics as an emphasis crutch replacing bold.
+   If you find yourself italicizing a word for emphasis, rewrite the
+   sentence so the emphasis is structural instead.
+
+3. LISTS & BULLETS: ZERO bulleted or numbered lists in the article body.
+   Everything must be written as prose paragraphs. If you feel the urge
+   to make a list, write it as a flowing sentence or short paragraph instead.
+
+4. HEADERS: Maximum 3 section headers (## level) in the entire article.
+   Let paragraphs transition naturally without needing a new header for
+   every topic shift.
+
+BANNED SENTENCE PATTERNS (non-negotiable):
+5. THE CONTRAST FLIP "This isn't X. It's Y." — FULLY BANNED.
+   Do NOT use this pattern even once. This includes ALL variations.
+
+6. THE TRIPLE NEGATION BUILDUP — FULLY BANNED.
+   Do NOT write "It's not because X. It's not because Y. It's because Z."
+
+7. THE DRAMATIC ONE-LINER — Maximum 1 in the entire article.
+
+8. THE PARALLEL STRUCTURE — Maximum 1 in the entire article.
+
+PUNCTUATION RULES (non-negotiable):
+9. EM DASHES (—): Maximum 2 in the entire article.
+
+10. ELLIPSIS (...): Maximum 1 in the entire article.
+
+11. RHETORICAL QUESTIONS: Maximum 1 in the entire article. Never as the opening sentence.
+
+TRANSITION RULES (non-negotiable):
+12. BANNED TRANSITION PHRASES — do NOT use any of these:
+    - "But here's what's interesting:"
+    - "And here's the thing:"
+    - "Here's where it gets interesting"
+    - "Here's the thing most people miss:"
+    - "Here's where I think this is going"
+    - "Now here's the kicker"
+    - "This is where it gets interesting"
+    - "And that's the point"
+    - "And that's exactly the problem"
+    - "Think about it:"
+    - "Let me tell you about [Name]"
+    - "Let me explain"
+
+STRUCTURAL RULES (non-negotiable):
+13. NO PERFECT FLOW: Include at least one slight tangent or aside.
+14. NO WORD COUNT appended.
+15. NO SUMMARY CONCLUSIONS.
+16. NO SECTION-PER-IDEA formatting.
+
+CONTENT RULES (non-negotiable):
+17. BANNED FILLER PHRASES — instant fail if used:
+    "In today's fast-paced world", "At the end of the day",
+    "It goes without saying", "Moving forward", "When it comes to",
+    "It's worth noting that", "The reality is", "The truth is",
+    "At its core", "When you think about it", "Massive numbers",
+    "And that gap", "The question is whether"
+
+18. No unearned superlatives.
+19. Every paragraph must contain something only MoveAtlas would say.
+20. No vague optimism or safe conclusions.
+21. No competitor bashing.
+"""
+
+
+# =============================================================================
+# Template 1 — Brand Authority Infrastructure Engine
+# =============================================================================
 
 def blog_post_brand_authority_engine(
-    brand_voice_section: str,          # max ~300 words
-    product_specs_section: str,        # max ~300 words
-    past_success_pattern_section: str, # max ~200 words (ONE pattern only)
-    operational_objective: str,        # max ~120 words
-    kpi_target: str,                   # short metric string
+    brand_voice_section: str,
+    product_specs_section: str,
+    past_success_pattern_section: str,
+    operational_objective: str,
+    kpi_target: str,
     topic: str,
-    target_audience: str = "Urban professionals (25–50) in European cities"
+    target_audience: str = "Professionals (25-50) worldwide"
 ) -> str:
     return f"""
-You are a senior brand strategist and narrative architect for MoveAtlas.
+You are a sharp, opinionated writer crafting a brand authority blog post.
+Write like a human columnist with a clear worldview, not a content machine.
 
 IMPORTANT:
 All knowledge inputs below are summarized sections.
@@ -22,13 +111,13 @@ Work only with what is provided.
 
 PRIMARY KNOWLEDGE BASE (Condensed Sections Only):
 
-Brand Voice (single focused section):
+Brand Voice:
 {brand_voice_section}
 
-Product & Infrastructure (single focused section):
+Product & Infrastructure:
 {product_specs_section}
 
-Past High-Performing Pattern (one pattern only):
+Past High-Performing Pattern:
 {past_success_pattern_section}
 
 OPERATIONAL OBJECTIVE:
@@ -38,95 +127,51 @@ KPI TARGET:
 {kpi_target}
 
 MISSION:
-Establish MoveAtlas as the only frictionless fitness infrastructure —
-not a marketplace, not a gym chain, but a borderless athletic identity layer.
+Establish MoveAtlas as the only frictionless fitness infrastructure,
+a borderless athletic identity layer operating worldwide.
 
 BLOG REQUIREMENTS:
 Topic: {topic}
 Target Audience: {target_audience}
 Length: 1,200–1,500 words
-Tone: Inclusive, empowering, confident, never corporate
-Style: Active voice, value-first, no jargon
+Perspective: Flexibility is infrastructure. Community is leverage.
 
-MANDATORY INTEGRATIONS:
-1. Open with friction narrative:
-   "Why does joining a gym still feel like signing a mortgage?"
-2. Reinforce:
-   - Cancel anytime flexibility
-   - 1,000+ studios / 15+ cities
-   - Real-time booking
-   - Unified membership across cities
-3. Berlin → Madrid → Amsterdam scenario
-4. Subtle studio partner benefit
-5. Integrate the provided success pattern
+MANDATORY:
+- Global scope (multi-continent examples)
+- Cross-city scenario
+- Story-driven (no lists)
+- Subtle partner benefit
+- Integrated success pattern
+- Close with CTA:
+  "Experience friction-free movement. Join the network."
 
-STRUCTURE:
-1. Provocative Hook
-2. Urban Friction Diagnosis
-3. Infrastructure Insight
-4. Cross-City Scenario
-5. Differentiation vs "geofenced" models
-6. CTA:
-   "Experience friction-free movement. Join the network."
-
-ANTI-GENERIC RULES:
-- No clichés
-- No generic fitness advice
-- No buzzwords
-- No corporate tone
-
-END GOAL:
-Increase brand recall and engagement while positioning MoveAtlas as infrastructure.
+{ANTI_SLOP_RULES_STRICT}
 
 Write the blog post now.
 """.strip()
 
+
 # =============================================================================
-# GLOBAL ANTI-SLOP RULES
+# Template 2 — Industry Problem–Solution Strategic Engine
 # =============================================================================
-# These are injected into EVERY template to prevent generic AI output.
-
-ANTI_SLOP_RULES = """
-CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
-1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
-   "As we navigate...", "In today's digital age...", "As we all know..."
-2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
-   "best-in-class" — unless backed by specific evidence in the knowledge base
-3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
-   "At the end of the day...", "Moving forward..."
-4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
-   specific data point, example, or brand attribute, don't make the claim
-5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
-   landing on a perspective
-6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
-   sentence patterns, personality traits
-7. NEVER produce content that could be about any company — every paragraph should
-   contain something only THIS brand would say
-"""
-
-
-# -------------------------------------------------------------------
-# Template 2 — Industry Problem–Solution Strategic Engine (Token Controlled)
-# -------------------------------------------------------------------
 
 def blog_post_industry_problem_solution_engine(
-    market_data_section: str,        # max ~300 words
-    industry_trends_section: str,    # max ~300 words
-    competitor_snapshot: str,        # max ~300 words
-    brand_positioning_summary: str,  # max ~200 words
-    operational_objective: str,      # max ~120 words
+    market_data_section: str,
+    industry_trends_section: str,
+    competitor_snapshot: str,
+    brand_positioning_summary: str,
+    operational_objective: str,
     kpi_target: str,
     topic: str,
-    target_audience: str = "Professionals (25–50) and SME decision-makers"
+    target_audience: str = "Professionals (25-50) and SME decision-makers"
 ) -> str:
     return f"""
-You are writing a strategic, data-backed industry article for MoveAtlas.
+You are a sharp, data-literate writer crafting an industry analysis article.
+Write like a columnist at a respected business publication.
 
 IMPORTANT:
 Inputs are condensed executive summaries.
 Do not invent additional data.
-
-SECONDARY KNOWLEDGE BASE (Summarized Inputs):
 
 Market Data Snapshot:
 {market_data_section}
@@ -137,7 +182,7 @@ Industry Trends Snapshot:
 Competitor Snapshot:
 {competitor_snapshot}
 
-BRAND POSITIONING SUMMARY:
+Brand Positioning:
 {brand_positioning_summary}
 
 OPERATIONAL OBJECTIVE:
@@ -148,107 +193,53 @@ KPI TARGET:
 
 MISSION:
 Educate the market on why traditional gym models are structurally obsolete
-and why flexible infrastructure is inevitable.
+and why flexible infrastructure is inevitable globally.
 
 BLOG REQUIREMENTS:
 Topic: {topic}
 Target Audience: {target_audience}
 Length: 1,300–1,600 words
-Tone: Authoritative, analytical, confident
 Perspective: Flexibility is the new baseline
 
-MANDATORY STRATEGIC ELEMENTS:
-1. Open with macro data:
-   - $150B TAM
-   - 15% CAGR
-   - Corporate wellness growth trajectory
+MANDATORY:
+- Macro data embedded naturally
+- Narrative friction diagnosis
+- Intentional Variety concept
+- Cross-continent scenario
+- SME wellness mini-story
+- 3-year global forecast
+- Close with CTA:
+  "Stop paying for a building. Start investing in your movement."
 
-2. Diagnose failures:
-   - Contract fatigue
-   - Pricing opacity
-   - Credit complexity
-   - Enterprise gatekeeping
-   - Limited cross-city usability
-
-3. Define "Intentional Variety"
-   - Exploration replacing commitment
-   - Hybrid fitness expectations
-
-4. Competitive contrast:
-   - Premium pricing vs transparent pricing
-   - Credits vs simplicity
-   - Enterprise-only vs SME-accessible
-
-5. Include:
-   - London → Milan travel scenario
-   - SME corporate wellness use case
-
-6. 3-Year Forecast:
-   - EU consolidation (2–3 dominant players)
-   - Hybrid + wearable integration expectation
-
-CTA:
-"Stop paying for a building. Start investing in your movement."
-
-ANTI-GENERIC RULES:
-- Every data point must drive implication
-- No neutral summaries
-- No recycled trend language
-- Clear point of view
-
-END GOAL:
-Drive CTR and establish strategic inevitability of MoveAtlas.
+{ANTI_SLOP_RULES_STRICT}
 
 Write the article now.
 """.strip()
 
-# =============================================================================
-# GLOBAL ANTI-SLOP RULES
-# =============================================================================
-# These are injected into EVERY template to prevent generic AI output.
 
-ANTI_SLOP_RULES = """
-CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
-1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
-   "As we navigate...", "In today's digital age...", "As we all know..."
-2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
-   "best-in-class" — unless backed by specific evidence in the knowledge base
-3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
-   "At the end of the day...", "Moving forward..."
-4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
-   specific data point, example, or brand attribute, don't make the claim
-5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
-   landing on a perspective
-6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
-   sentence patterns, personality traits
-7. NEVER produce content that could be about any company — every paragraph should
-   contain something only THIS brand would say
-"""
-# -------------------------------------------------------------------
-# Template 3 — Hybrid Strategic Differentiation Engine (Token Controlled)
-# -------------------------------------------------------------------
+# =============================================================================
+# Template 3 — Hybrid Strategic Differentiation Engine
+# =============================================================================
 
 def blog_post_hybrid_strategic_engine(
-    brand_voice_section: str,         # max ~250 words
-    product_specs_section: str,       # max ~250 words
-    partner_metrics_snapshot: str,    # max ~200 words
-    market_data_snapshot: str,        # max ~250 words
-    industry_trends_snapshot: str,    # max ~250 words
-    competitor_snapshot: str,         # max ~250 words
-    operational_objective: str,       # max ~120 words
+    brand_voice_section: str,
+    product_specs_section: str,
+    partner_metrics_snapshot: str,
+    market_data_snapshot: str,
+    industry_trends_snapshot: str,
+    competitor_snapshot: str,
+    operational_objective: str,
     kpi_target: str,
     topic: str,
-    target_audience: str = "Urban professionals + SME founders + studio operators"
+    target_audience: str = "Professionals + SME founders + studio operators"
 ) -> str:
     return f"""
-You are crafting a high-impact hybrid thought leadership article.
+You are a sharp, opinionated writer crafting a thought leadership blog post.
+Write like a human columnist with a clear worldview.
 
 IMPORTANT:
-All inputs are controlled executive snapshots.
+All inputs are condensed executive snapshots.
 Work only with what is provided.
-Do not assume missing context.
-
-PRIMARY KNOWLEDGE BASE (Condensed):
 
 Brand Voice:
 {brand_voice_section}
@@ -258,8 +249,6 @@ Product & Infrastructure:
 
 Partner Metrics:
 {partner_metrics_snapshot}
-
-SECONDARY KNOWLEDGE BASE (Condensed):
 
 Market Data:
 {market_data_snapshot}
@@ -278,80 +267,25 @@ KPI TARGET:
 
 MISSION:
 Position MoveAtlas as the community-first digital infrastructure
-for European athleticism — serving both members and studios.
+for global athleticism.
 
 BLOG REQUIREMENTS:
 Topic: {topic}
 Target Audience: {target_audience}
 Length: 1,400–1,800 words
-Tone: Bold, forward-looking, inclusive, non-corporate
 Perspective: Flexibility is infrastructure. Community is leverage.
 
-MANDATORY DIFFERENTIATION:
-Explicitly contrast:
-- Network size vs intentional community
-- Credits vs transparent pricing
-- Enterprise-only vs SME-accessible
-- Extraction vs community growth
+MANDATORY:
+- Human mid-scene opening
+- Embedded macro data
+- Cross-continent continuity scenario
+- Studio partner mini-story
+- Narrative differentiation
+- 36-month global forecast
+- Close with CTA:
+  "Unlock 1,000+ studios today. One Membership. Infinite Movement."
 
-INCLUDE:
-1. Provocative opening:
-   "Why does joining a gym still feel like signing a lease?"
-
-2. Combine macro + micro:
-   - $150B TAM
-   - 15% CAGR
-   - Human frustration (travel friction, boredom)
-
-3. Scenario:
-   Berlin → Madrid → Barcelona member continuity
-
-4. Studio Partner Perspective:
-   - 32% weekday occupancy growth
-   - Recurring revenue stability
-   - Community sustainability
-
-5. 36-Month Prediction:
-   - 1–2 dominant EU infrastructure leaders
-   - AI + wearable integration expectation
-   - SME wellness expansion
-
-6. Strong CTA:
-   "Unlock 1,000+ studios today. One Membership. Infinite Movement."
-
-ANTI-AI-SLOP RULES:
-- No safe conclusions
-- No vague optimism
-- No competitor bashing
-- No bland balance
-- Clear, differentiated stance
-
-END GOAL:
-Increase sign-ups and partner onboarding
-by clearly demonstrating ecosystem superiority.
+{ANTI_SLOP_RULES_STRICT}
 
 Write the article now.
 """.strip()
-
-# =============================================================================
-# GLOBAL ANTI-SLOP RULES
-# =============================================================================
-# These are injected into EVERY template to prevent generic AI output.
-
-ANTI_SLOP_RULES = """
-CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
-1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
-   "As we navigate...", "In today's digital age...", "As we all know..."
-2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
-   "best-in-class" — unless backed by specific evidence in the knowledge base
-3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
-   "At the end of the day...", "Moving forward..."
-4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
-   specific data point, example, or brand attribute, don't make the claim
-5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
-   landing on a perspective
-6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
-   sentence patterns, personality traits
-7. NEVER produce content that could be about any company — every paragraph should
-   contain something only THIS brand would say
-"""
