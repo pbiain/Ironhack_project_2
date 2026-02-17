@@ -81,6 +81,29 @@ Increase brand recall and engagement while positioning MoveAtlas as infrastructu
 Write the blog post now.
 """.strip()
 
+=============================================================================
+# GLOBAL ANTI-SLOP RULES
+# =============================================================================
+# These are injected into EVERY template to prevent generic AI output.
+
+ANTI_SLOP_RULES = """
+CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
+1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
+   "As we navigate...", "In today's digital age...", "As we all know..."
+2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
+   "best-in-class" — unless backed by specific evidence in the knowledge base
+3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
+   "At the end of the day...", "Moving forward..."
+4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
+   specific data point, example, or brand attribute, don't make the claim
+5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
+   landing on a perspective
+6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
+   sentence patterns, personality traits
+7. NEVER produce content that could be about any company — every paragraph should
+   contain something only THIS brand would say
+"""
+
 
 # -------------------------------------------------------------------
 # Template 2 — Industry Problem–Solution Strategic Engine (Token Controlled)
@@ -179,7 +202,28 @@ Drive CTR and establish strategic inevitability of MoveAtlas.
 Write the article now.
 """.strip()
 
+=============================================================================
+# GLOBAL ANTI-SLOP RULES
+# =============================================================================
+# These are injected into EVERY template to prevent generic AI output.
 
+ANTI_SLOP_RULES = """
+CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
+1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
+   "As we navigate...", "In today's digital age...", "As we all know..."
+2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
+   "best-in-class" — unless backed by specific evidence in the knowledge base
+3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
+   "At the end of the day...", "Moving forward..."
+4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
+   specific data point, example, or brand attribute, don't make the claim
+5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
+   landing on a perspective
+6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
+   sentence patterns, personality traits
+7. NEVER produce content that could be about any company — every paragraph should
+   contain something only THIS brand would say
+"""
 # -------------------------------------------------------------------
 # Template 3 — Hybrid Strategic Differentiation Engine (Token Controlled)
 # -------------------------------------------------------------------
@@ -288,3 +332,26 @@ by clearly demonstrating ecosystem superiority.
 
 Write the article now.
 """.strip()
+
+=============================================================================
+# GLOBAL ANTI-SLOP RULES
+# =============================================================================
+# These are injected into EVERY template to prevent generic AI output.
+
+ANTI_SLOP_RULES = """
+CRITICAL ANTI-GENERIC INSTRUCTIONS (apply to ALL content):
+1. NEVER open with cliches: "In today's fast-paced world...", "In the ever-evolving landscape...",
+   "As we navigate...", "In today's digital age...", "As we all know..."
+2. NEVER use unearned superlatives: "revolutionary", "game-changing", "cutting-edge",
+   "best-in-class" — unless backed by specific evidence in the knowledge base
+3. NEVER write vague filler: "It's important to note that...", "It goes without saying...",
+   "At the end of the day...", "Moving forward..."
+4. ALWAYS ground claims in specifics from the knowledge base — if you can't cite a
+   specific data point, example, or brand attribute, don't make the claim
+5. ALWAYS take a position — avoid wishy-washy "there are pros and cons" without
+   landing on a perspective
+6. ALWAYS match the EXACT brand voice characteristics provided — terminology,
+   sentence patterns, personality traits
+7. NEVER produce content that could be about any company — every paragraph should
+   contain something only THIS brand would say
+"""
